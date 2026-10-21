@@ -1,0 +1,32 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connexion à ENYXA",
+        "description": "Saisissez l’adresse HTTPS et un token API personnel en lecture seule.",
+        "data": {
+          "url": "Adresse du serveur ENYXA",
+          "token": "Token API personnel"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Connexion à ENYXA impossible",
+      "invalid_auth": "Token invalide ou permissions insuffisantes",
+      "https_required": "Une adresse HTTPS est nécessaire"
+    },
+    "abort": {
+      "already_configured": "Ce serveur ENYXA est déjà configuré"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Options ENYXA",
+        "data": {
+          "scan_interval": "Intervalle de mise à jour (minutes)"
+        }
+      }
+    }
+  }
+}

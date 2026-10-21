@@ -1,0 +1,11 @@
+{
+  "domain": "enyxa",
+  "name": "ENYXA",
+  "version": "0.2.0",
+  "documentation": "https://github.com/REPLACE_WITH_YOUR_USERNAME/enyxa-homeassistant",
+  "issue_tracker": "https://github.com/REPLACE_WITH_YOUR_USERNAME/enyxa-homeassistant/issues",
+  "codeowners": [],
+  "config_flow": true,
+  "iot_class": "cloud_polling",
+  "requirements": []
+}

@@ -1,0 +1,32 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to ENYXA",
+        "description": "Enter the HTTPS URL and a read-only personal API token.",
+        "data": {
+          "url": "ENYXA server URL",
+          "token": "Personal API token"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot connect to ENYXA",
+      "invalid_auth": "Invalid token or missing permissions",
+      "https_required": "An HTTPS URL is required"
+    },
+    "abort": {
+      "already_configured": "This ENYXA server is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "ENYXA options",
+        "data": {
+          "scan_interval": "Update interval (minutes)"
+        }
+      }
+    }
+  }
+}
