@@ -1,21 +1,25 @@
-# ENYXA for Home Assistant v0.2.0
+# ENYXA for Home Assistant v0.2.1
 
-Custom integration for ENYXA API. Read-only sensors and binary sensors for paired devices.
+Read-only Home Assistant integration for the ENYXA API. Discovers paired devices and provides battery, charging, storage and synchronization entities. Configurable polling interval: 1, 5, 10, 15 or 30 minutes.
 
-## Installation
+## Installation with HACS
 
-**Manual:** copy `custom_components/enyxa` to `/config/custom_components/enyxa`, restart Home Assistant, then add ENYXA under Settings > Devices & services. Existing configuration entries should remain in place. Back up the existing directory first.
-
-**HACS (custom repository):** publish the contents of this archive at the root of your own public GitHub repository. Replace `REPLACE_WITH_YOUR_USERNAME` in `manifest.json` with your GitHub username and repository path. In HACS, add the repository URL as a custom **Integration** repository, install ENYXA, and restart Home Assistant. This package has **not** been submitted to the HACS default catalog.
+Add `https://github.com/luguen/ha-enyxa` as a custom Integration repository in HACS, install or update ENYXA, and restart Home Assistant. Existing ENYXA configuration entries should be retained; do not remove the integration from Devices & Services.
 
 ## Configuration
 
-Provide ENYXA HTTPS URL and a read-only personal token with `devices:read`, `battery:read`, `storage:read`. Never commit tokens.
+Use your ENYXA HTTPS URL and a personal API token with `devices:read`, `battery:read`, `storage:read`. Never commit tokens.
 
-Configure polling in Settings > Devices & services > ENYXA > Configure: 1, 5, 10, 15, or 30 minutes. Default 5 minutes.
+## Branding
 
-## Notes
+`branding/` contains proposed icon and logo assets derived from the provided ENYXA SVG. **These files are publication assets, not an automatic Home Assistant icon registration.** To display branding in Home Assistant's integration UI, submit assets under the `enyxa` domain to the official Home Assistant brands repository following its current contribution requirements. A custom HACS repository alone does not guarantee branding display. The source SVG is included for further refinement.
 
-- Device API errors retain the last measurement while marking that device unavailable. This is not yet a full offline-age policy.
-- Existing sensors and entity identifiers are intended to remain stable, but this release has not been tested in your running Home Assistant instance.
-- HACS packaging prepared; no GitHub repository has been created or published.
+## Changes in 0.2.1
+
+- Updated GitHub documentation and issue links.
+- Prepared ENYXA branding assets.
+- No sensor, coordinator, entity-ID, API or polling logic changes relative to v0.2.0.
+
+## License
+
+No license has been added automatically. Select a license only if you have the rights to distribute the code and artwork under its terms.

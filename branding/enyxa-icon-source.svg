@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 1024" role="img" aria-label="ENYXA icon">
+<defs>
+ <linearGradient id="top" x1="0" y1="0.2" x2="1" y2="0.8" objectBoundingBox="true"><stop stop-color="#1559fc"/><stop offset=".38" stop-color="#06bafa"/><stop offset="1" stop-color="#2ff9ee"/></linearGradient>
+ <linearGradient id="upper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ef5afc"/><stop offset=".32" stop-color="#aa35ed"/><stop offset=".72" stop-color="#7434f5"/><stop offset="1" stop-color="#2356ff"/></linearGradient>
+ <linearGradient id="lower" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ee91ff"/><stop offset=".38" stop-color="#8c36fb"/><stop offset=".75" stop-color="#4732fc"/><stop offset="1" stop-color="#165bfa"/></linearGradient>
+ <linearGradient id="bottom" x1="0" y1=".3" x2="1" y2=".6"><stop stop-color="#2b20ff"/><stop offset=".5" stop-color="#2856fc"/><stop offset="1" stop-color="#27f4f1"/></linearGradient>
+ <linearGradient id="middle" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#9c36ff"/><stop offset=".55" stop-color="#673cf6"/><stop offset="1" stop-color="#2757fc"/></linearGradient>
+ <filter id="glow" x="-35%" y="-35%" width="170%" height="170%"><feGaussianBlur stdDeviation="16"/></filter>
+ <filter id="edge" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="2"/></filter>
+</defs>
+<!-- Soft halo, with a fully transparent canvas -->
+<g opacity=".24" filter="url(#glow)"><path fill="#6044ff" d="M398 199 C350 212 286 282 245 332 C218 365 220 399 254 431 L410 562 L256 694 C210 740 211 803 254 843 C288 876 328 895 383 895 L885 895 L784 793 L399 793 C359 793 345 762 370 733 L480 633 L646 633 L461 455 L370 369 C344 346 354 317 387 317 L716 317 L826 199 Z"/></g>
+<!-- Rear lower folded ribbon -->
+<g transform="translate(19 -21)">
+<path fill="url(#lower)" d="M421 515 L269 652 C207 708 198 767 231 818 C258 863 313 884 375 887 C331 867 305 837 305 800 C305 767 326 740 354 712 L494 587 Z"/>
+</g>
+<!-- Bottom ribbon, rounded inner return and pointed right tip -->
+<path fill="url(#bottom)" d="M354 712 C316 748 303 781 318 814 C333 849 366 868 423 868 L877 868 L777 769 C759 750 745 747 717 747 L412 747 C376 747 357 733 354 712 Z"/>
+<!-- Upper back fold -->
+<path fill="url(#upper)" d="M369 199 C324 213 281 268 242 319 C209 361 209 399 245 433 L388 556 C405 572 419 578 441 578 L619 578 L447 412 L359 333 C332 308 330 277 369 199 Z"/>
+<!-- Upper top ribbon with rounded leading bend and bevelled taper -->
+<path fill="url(#top)" d="M369 199 C397 188 416 186 447 186 L886 186 L784 283 C769 297 753 304 731 304 L434 304 C400 304 380 312 368 339 C350 323 336 306 336 283 C336 249 349 219 369 199 Z"/>
+<!-- Front central folded face -->
+<path fill="url(#middle)" d="M368 339 C393 365 423 390 453 419 L619 578 L449 578 C423 578 409 571 389 553 L246 432 C211 402 209 370 239 330 C258 304 292 266 335 227 C311 273 329 301 368 339 Z"/>
+<!-- Fine reflective seams -->
+<path d="M368 339 C382 315 402 304 434 304 L731 304 C753 304 769 297 784 283" fill="none" stroke="#70faff" stroke-opacity=".5" stroke-width="3"/>
+<path d="M354 712 C340 733 334 756 345 779 C358 808 384 818 422 818" fill="none" stroke="#9b91ff" stroke-opacity=".22" stroke-width="3"/>
+<path d="M238 330 C213 366 216 396 246 424" fill="none" stroke="#f3a6ff" stroke-opacity=".45" stroke-width="3"/>
+</svg>
