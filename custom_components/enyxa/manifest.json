@@ -1,7 +1,7 @@
 {
   "domain": "enyxa",
   "name": "ENYXA",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "documentation": "https://github.com/luguen/ha-enyxa",
   "issue_tracker": "https://github.com/luguen/ha-enyxa/issues",
   "codeowners": [],

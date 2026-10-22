@@ -1,25 +1,16 @@
-# ENYXA for Home Assistant v0.2.1
+# ENYXA Home Assistant v0.2.2
 
-Read-only Home Assistant integration for the ENYXA API. Discovers paired devices and provides battery, charging, storage and synchronization entities. Configurable polling interval: 1, 5, 10, 15 or 30 minutes.
+Cette version ajoute les ressources graphiques locales de l’intégration, conformément à Home Assistant 2026.3+.
 
-## Installation with HACS
+## Changements
+- Images PNG dans `custom_components/enyxa/brand/`.
+- Version du manifeste : `0.2.2`.
+- Code fonctionnel des capteurs et de la configuration conservé depuis v0.2.1.
 
-Add `https://github.com/luguen/ha-enyxa` as a custom Integration repository in HACS, install or update ENYXA, and restart Home Assistant. Existing ENYXA configuration entries should be retained; do not remove the integration from Devices & Services.
+## Publication HACS
+Copier le contenu de cette archive à la racine du dépôt `luguen/ha-enyxa`, puis commit, push et publier le tag/release `v0.2.2`.
+Dans HACS, mettre à jour ENYXA puis redémarrer Home Assistant. Si le logo ne s'affiche pas immédiatement, actualiser la page et patienter pendant le rafraîchissement du cache.
 
-## Configuration
+Ne pas supprimer l'intégration depuis Appareils et services : la configuration et les entités existantes doivent être conservées.
 
-Use your ENYXA HTTPS URL and a personal API token with `devices:read`, `battery:read`, `storage:read`. Never commit tokens.
-
-## Branding
-
-`branding/` contains proposed icon and logo assets derived from the provided ENYXA SVG. **These files are publication assets, not an automatic Home Assistant icon registration.** To display branding in Home Assistant's integration UI, submit assets under the `enyxa` domain to the official Home Assistant brands repository following its current contribution requirements. A custom HACS repository alone does not guarantee branding display. The source SVG is included for further refinement.
-
-## Changes in 0.2.1
-
-- Updated GitHub documentation and issue links.
-- Prepared ENYXA branding assets.
-- No sensor, coordinator, entity-ID, API or polling logic changes relative to v0.2.0.
-
-## License
-
-No license has been added automatically. Select a license only if you have the rights to distribute the code and artwork under its terms.
+Documentation : https://contributors.home-assistant.io/blog/2026/02/24/brands-proxy-api/
